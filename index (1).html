@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,85 +6,110 @@
   <title>IcePro - Helados Proteicos</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #ffffff;
-      color: #1a1a1a;
-      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #333;
     }
     header {
-      background-color: #f97316;
-      color: white;
-      padding: 1.2rem 0;
+      background-color: #f47b20;
+      padding: 20px 0;
+      text-align: center;
     }
     header img {
       width: 120px;
-      margin-top: 0.5rem;
+      display: block;
+      margin: 0 auto 10px;
     }
-    main {
-      padding: 2rem;
+    header h1 {
+      color: white;
+      font-size: 2.2em;
+      margin: 0;
     }
-    h2 {
-      color: #f97316;
-      margin-top: 2rem;
+    .intro {
+      text-align: center;
+      padding: 20px;
+      font-size: 1.1em;
     }
-    ul {
+    .sabores {
+      text-align: center;
+      padding: 20px;
+    }
+    .sabores h2 {
+      color: #f47b20;
+    }
+    .sabores ul {
       list-style: none;
       padding: 0;
-      margin: 1rem 0;
     }
-    li {
-      margin: 0.5rem 0;
-      font-size: 1.1rem;
+    .sabores li {
+      margin: 10px 0;
+      font-size: 1.1em;
     }
-    .button {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.8rem 1.5rem;
-      font-size: 1rem;
+    .pedido {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .pedido a {
+      background-color: #f47b20;
       color: white;
-      background-color: #f97316;
-      border: none;
-      border-radius: 5px;
+      padding: 12px 24px;
+      border-radius: 8px;
       text-decoration: none;
+      font-weight: bold;
     }
     footer {
-      background-color: #f3f4f6;
-      padding: 1rem;
-      font-size: 0.9rem;
-      margin-top: 2rem;
+      background-color: #eee;
+      padding: 10px;
+      text-align: center;
+      font-size: 0.9em;
     }
-    .product-img {
-      width: 280px;
-      margin-top: 1rem;
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .galeria img {
+      width: 220px;
       border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo IcePro" />
+    <img src="LogoIcePro.png" alt="Logo IcePro">
     <h1>IcePro</h1>
   </header>
-  <main>
-    <p>Helados proteicos artesanales</p>
-    <p><strong>20g proteína · Sin azúcar añadida · Bajo en calorías</strong></p>
 
+  <section class="intro">
+    <p>Helados proteicos artesanales</p>
+    <p><strong>20g proteína</strong> · <strong>Sin azúcar añadida</strong> · <strong>Bajo en calorías</strong></p>
+  </section>
+
+  <section class="sabores">
     <h2>Sabores disponibles</h2>
     <ul>
-      <li>🥜 Mantequilla de maní</li>
+      <li>🧈 Mantequilla de maní</li>
       <li>🍫 Chocolate intenso</li>
-      <li>🍦 Vainilla cremosa</li>
+      <li>🧊 Vainilla cremosa</li>
     </ul>
+  </section>
 
-    <a class="button" href="https://wa.me/56912345678" target="_blank">Haz tu pedido por WhatsApp</a>
+  <div class="galeria">
+    <img src="helado1.png" alt="Helado 1">
+    <img src="helado2.png" alt="Helado 2">
+  </div>
 
-    <img src="producto.png" alt="Foto helado IcePro" class="product-img" />
-  </main>
+  <section class="pedido">
+    <a href="https://wa.me/56912345678" target="_blank">Haz tu pedido por WhatsApp</a>
+  </section>
 
   <footer>
-    © 2025 IcePro. Todos los derechos reservados.
+    &copy; 2025 IcePro. Todos los derechos reservados.
   </footer>
 </body>
 </html>
+
